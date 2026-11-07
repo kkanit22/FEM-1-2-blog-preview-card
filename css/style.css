@@ -4,9 +4,16 @@
 	--gray-950: hsl(0, 0%, 7%);
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
 body {
 	background-color: var(--yellow);
-	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -27,6 +34,7 @@ main {
 
 .blog-post {
 	background-color: white;
+	border: 1px solid var(--gray-950);
 	border-radius: 20px;
 	box-shadow: 8px 8px 0 var(--gray-950);
 	display: flex;
